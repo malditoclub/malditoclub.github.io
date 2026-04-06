@@ -15,7 +15,7 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route path="/malditoClub" element={<MalditoClubEstandar />} />
+          <Route path="/" element={<MalditoClubEstandar />} />
           <Route path="/noticia/:id" element={<NoticiaPrincipal />} />
           <Route path="/etiqueta/:etiqueta" element={<NoticiaEtiqueta />} />
         </Routes>
