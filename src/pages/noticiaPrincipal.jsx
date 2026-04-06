@@ -91,7 +91,12 @@ const noticiaPrincipal = () => {
                 <div className="relative z-10 text-white">
                     {/* Primera noticia con padding consistente */}
                     <Noticia noticia={noticias[0]} isFirst={true} />
-                    <Banner />
+                    <Banner 
+                    titulo="Promoción Especial"
+                    subtitulo="Click para más información"
+                    imagenSrc="/assets/imagen2.avif"
+                    link="https://github.com/"
+                    />
                 </div>
                 <div className="relative z-10 text-white gap-16 mt-16 flex flex-col">
                     {noticias.slice(1).map((n, i) => (
