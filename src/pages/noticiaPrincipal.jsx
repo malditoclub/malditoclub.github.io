@@ -75,15 +75,18 @@ const noticiaPrincipal = () => {
     }
 
     return (
-        <div className="min-h-screen bg-black"> 
-            <HeaderAnimado />
-            <div className="relative min-h-screen bg-black ">
+        <div className="min-h-screen bg-black "> 
+
+        <HeaderAnimado />
+            <div className="relative min-h-screen bg-black">
+                {/* Imagen superior */}
                 <div 
-                    className="absolute inset-0 opacity-50 bg-repeat-y bg-center "
-                    style={{ 
-                        backgroundImage: `url('/assets/RS-Texture-01.jpg')`,
-                        backgroundSize: 'cover'
-                    }}
+                className="absolute inset-0 opacity-50 
+                            bg-repeat-y bg-center"
+                style={{ 
+                    backgroundImage: `url('/assets/RS-Texture-01.jpg')`,
+                    backgroundSize: 'contain'  /* o 'contain' o un valor específico */
+                }}
                 />
                 <div className="relative z-10 text-white">
                     {/* Primera noticia con padding consistente */}
