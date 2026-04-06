@@ -33,7 +33,11 @@ const malditoClubEstandar = () => {
           <Banner/>
           <Plantilla2noticias/>
           <div className="md:w-full md:h-[10vh]"></div>
-          <Banner/>
+          <Banner 
+            titulo="Título personalizado"
+            subtitulo="Subtítulo personalizado"
+            imagenSrc="/assets/imagen1.avif"
+          />
           <Noticia noticia={Noticias[7]} />
           <Noticia noticia={Noticias[8]} />
           <Noticia noticia={Noticias[9]} />

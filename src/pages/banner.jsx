@@ -62,7 +62,7 @@ const Banner = ({
       <div className={`
         relative
         ${isMobile ? 'w-full' : 'w-3/5'}
-        h-[30vh]
+        h-[17vh]
         overflow-hidden
         rounded-lg
         shadow-xl
