@@ -7,7 +7,8 @@ export const Etiqueta = [
   { name: 'Musica', href: '#', id: 1 },
   { name: 'Nosotros', href: '#', id: 2 },
   { name: 'Actualidad', href: '#', id: 3 },
-  { name: 'Comedia', href: '#', id: 4 }
+  { name: 'Comedia', href: '#', id: 4 },
+  { name: 'ejemplo1', href: '#', id: 5 },
 ];
 
 export const LinksItems = [
@@ -17,14 +18,7 @@ export const LinksItems = [
 ];
 
 export const Noticias = [
-  { 
-    titulo: "El vuelo de Adorni a Punta del Este: el broker que vendió el pasaje de vuelta declaró que pagó Marcelo Grandío", 
-    introduccion: "La nueva generación de tarjetas gráficas promete un salto cuántico en rendimiento con arquitectura Blackwell y 32GB de memoria GDDR7.",
-    imagen: "imagen1.avif",
-    texto: [
-        "El testigo ratificó que quien pagó, tanto la ida como la vuelta, fue Marcelo Grandío, quien pasó el fin de semana largo de carnaval con el jefe de Gabinete, sus dos hijos y su esposa. Issin había dicho al diario La Nación y repitió ahora ante la Justicia que adquirió un paquete de 10 vuelos -que incluyen ida y vuelta- por 42.250 dólares a la empresa Alpha Centauri.No obstante, la facturación que consta en el expediente se hizo por separado para el periodista amigo de Adorni. La ida se la cobró Alpha Centauri a la productora ImHouse, y la vuelta la facturó el bróker directamente a Grandío. La factura del viaje de regreso a Buenos Aires se emitió el 9 de marzo -tres semanas después del vuelo- y fue por un valor de 3.000 dólares. Una novedad que surgió de la declaración del piloto es que Marcelo Grandío pagó en efectivo e hizo llegar los billetes a través de un tal “Horacio”, según confiaron a Infobae fuentes del caso. En la testimonial, además, el bróker Issin fue consultado sobre por qué vendió el vuelo a 3.000 dólares, ya que no cerraría con el “precio mayorista” que él pagó por el paquete, y a qué se debe la facturación tardía. El intermediario entre los clientes exclusivos y esta compañía de aviación privada explicó sobre este point que “si el cliente necesita bajar los costos por un determinado motivo, es usual utilizar la ‘pata vacía’ –empty leg, como se le llama en el rubro- para vendérsela a otros clientes”. Y agregó que “puede pasar que el cliente quiera partir del destino B hacia el destino A, por lo que el avión, que está en el destino A, tiene que movilizarse hacia B. Ese tramo (de A hacia B) queda vacío y el cliente puede pedir que se utilice ese espacio para otro pasajero y así aminorar el costo”. Tal fue el caso de Adorni y Grandio, según el piloto: pudieron ubicar en el viaje de ida a otros dos pasajeros y en la vuelta a uno en asientos libres, lo que generó un descuento en el precio. El testigo había sido consultado por la prensa respecto de más precisiones sobre esto cuando salió del Juzgado Federal N° 4, pero prefirió guardar silencio: “No quiero hablar al respecto, pero está aclarado ese point. También aclaré quién pagó”, dijo. El miércoles, en conferencia de prensa, Manuel Adorni había declarado: “El viaje lo pagué, estoy cansado de decirlo, ya no sé cómo explicarlo. La dádiva está si yo no hubiera pagado el viaje”."],
-    etiqueta: 1
-  },
+
   { 
     titulo: "Muere Noelia Castillo, la más joven en recibir la eutanasia en España, tras dos años de lucha en los tribunales", 
     introduccion: "Los nuevos chips prometen revolucionar la eficiencia energética en portátiles con arquitectura híbrida avanzada.",
@@ -213,4 +207,34 @@ export const Noticias = [
     texto: ["La convocatoria a último momento de Agustín Giay a la selección argentina resultó una de las grandes novedades de la nómina del director técnico Lionel Scaloni de cara a los amistosos ante Mauritania y Zambia en La Bombonera. En las últimas horas, se dieron a conocer los entretelones del llamado, que incluyó una verdadera pieza de comedia. Fue su papá el encargado de contar los detalles de lo sucedido con el lateral del Palmeiras, de 22 años. Giay, surgido de San Lorenzo, fue citado para suplir a Gonzalo Montiel, marginado por un desgarro en el isquiotibial. Su reacción, según relató Cadena 3, fue de sorpresa y alegría absoluta. El propio Giay se enteró a través de una llamada insistente de su padre, quien había sido advertido primero por el representante del futbolista. La convocatoria coincidió con días libres que Giay disfrutaba en la capital argentina y motivó un inmediato festejo familiar. El camino que desembocó en la citación comenzó con el rumor transmitido por el apoderado de Giay. “El representante de Agustín me comenta que se rumoreaba que existía la posibilidad de que lo convoquen, pero eran solo comentarios, hasta que 30 minutos después me vuelve a llamar para confirmarlo”, relató Maximiliano Giay a Cadena 3."],
     etiqueta: 3
   },
+];
+
+export const Banners = [
+  { 
+    titulo: "ejemplo", 
+    subtitulo: "Subtítulo personalizado",
+    imagenSrc: "/assets/imagen1.avif",
+    link: false,
+  },
+  { 
+    titulo: "ejemplo2", 
+    subtitulo: "",
+    imagenSrc: "/assets/imagen2.avif",
+    link: false,
+
+  },
+  { 
+    titulo: "ejemplo3", 
+    subtitulo: "Subtítulo personalizado",
+    imagenSrc: "/assets/imagen3.avif",
+    link: false,
+
+  },
+    { 
+    titulo: "ejemplo4", 
+    subtitulo: "Subtítulo personalizado",
+    link: "https://lichess.org/1KJpNJkCxaQ7",
+
+  },
+
 ];

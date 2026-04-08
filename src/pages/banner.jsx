@@ -2,13 +2,8 @@ import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
-const Banner = ({ 
-  titulo = "Bienvenido a Maldito Club",
-  subtitulo = "Comunicación irresponsable.",
-  imagenSrc = "/assets/banner.jpg", // Una sola imagen para todos los dispositivos
-  link = null, // Opcional: si quieres que el banner sea clickeable
-  overlayOpacity = 0.5
-}) => {
+
+const Banner = ({banner}) => {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
@@ -25,9 +20,8 @@ const Banner = ({
   }, []);
 
   // Determinar si el banner es clickeable
-  const hasLink = link !== null && link !== undefined;
-  const isExternal = hasLink && (link.startsWith('http://') || link.startsWith('https://'));
-  const toPath = hasLink ? link : '#';
+  console.log(banner.link);
+  const hasLink = banner.link;
   
   // Variantes para animaciones
   const containerVariants = {
@@ -79,15 +73,15 @@ const Banner = ({
           className="absolute inset-0 z-0"
         >
           <img
-            src={imagenSrc}
-            alt={titulo}
+            src={banner.imagenSrc}
+            alt={banner.titulo}
             onLoad={() => setImageLoaded(true)}
             className="w-full h-full object-cover"
           />
           {/* Overlay oscuro para mejorar legibilidad del texto */}
           <div 
             className="absolute inset-0 bg-black"
-            style={{ opacity: overlayOpacity }}
+            style={{ opacity: 0.5 }}
           />
         </motion.div>
 
@@ -100,7 +94,7 @@ const Banner = ({
               transition={{ delay: 0.3, duration: 0.5 }}
               className="text-2xl md:text-4xl font-bold"
             >
-              {titulo}
+              {banner.titulo}
             </motion.h2>
 
             <motion.p
@@ -109,7 +103,7 @@ const Banner = ({
               transition={{ delay: 0.5, duration: 0.5 }}
               className="text-gray-200 leading-relaxed mt-2 md:mt-4 text-sm md:text-base"
             >
-              {subtitulo}
+              {banner.subtitulo}
             </motion.p>
           </div>
         </div>
@@ -121,9 +115,9 @@ const Banner = ({
   if (hasLink) {
     return (
       <Link
-        to={toPath}
-        target={isExternal ? "_blank" : undefined}
-        rel={isExternal ? "noopener noreferrer" : undefined}
+        to={banner.link}
+        target={ "_blank" }
+        rel={ "noopener noreferrer" }
         className="block cursor-pointer hover:opacity-90 transition-opacity duration-300"
       >
         <BannerContent />

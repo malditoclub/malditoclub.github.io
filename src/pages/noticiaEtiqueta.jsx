@@ -1,5 +1,5 @@
 import HeaderAnimado from "./headerMC";
-import { Noticias, Etiqueta } from "./configuracion";
+import { Noticias, Etiqueta, Banners } from "./configuracion";
 import { useParams, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Banner from "./banner";
@@ -111,7 +111,7 @@ const noticiaEtiqueta = () => {
                     {pagina === 1 && noticias[0] && (
                         <>
                             <Noticia noticia={noticias[0]} isFirst={true} />
-                            <Banner />
+                            {Banners[3] && <Banner banner={Banners[3]} />}
                         </>
                     )}
 

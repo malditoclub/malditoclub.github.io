@@ -4,12 +4,12 @@ import Body from "./body";
 import Banner from "./banner";
 import Plantilla2noticias from "./plantilla2noticias";
 import { Noticia } from "./noticiaPrincipal";
-import { Noticias } from "./configuracion";
+import { Noticias, Banners } from "./configuracion";
 
 
 const malditoClubEstandar = () => {
 
-
+  console.log(Banners[0]); 
   return (
     // [#A30000]
     <div className="min-h-screen bg-black "> 
@@ -30,19 +30,17 @@ const malditoClubEstandar = () => {
           <div className="md:w-full md:h-[20vh]"></div>
           <Body/>
           <div className="md:w-full md:h-[10vh]"></div>
-          <Banner/>
+          
+          <Banner banner={Banners[0]} />
+          <div className="md:w-full md:h-[10vh]"></div>
           <Plantilla2noticias/>
           <div className="md:w-full md:h-[10vh]"></div>
-          <Banner 
-            titulo="Título personalizado"
-            subtitulo="Subtítulo personalizado"
-            imagenSrc="/assets/imagen1.avif"
-          />
+          <Banner banner={Banners[1]} />
           <Noticia noticia={Noticias[7]} />
           <Noticia noticia={Noticias[8]} />
           <Noticia noticia={Noticias[9]} />
           <Noticia noticia={Noticias[10]} />
-          <div className="md:w-full md:h-[20vh]"></div>
+          <div className="md:w-full md:h-[30vh]"></div>
         </div>
       </div>
 

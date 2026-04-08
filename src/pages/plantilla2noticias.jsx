@@ -29,6 +29,7 @@ const Plantilla2noticias = () => {
                 md:grid-cols-[2fr_1fr]
                 grid-rows-1
                 gap-1
+                md:gap-8
                 ">
                     {/* Noticia Principal */}
                     {(() => {
@@ -42,7 +43,7 @@ const Plantilla2noticias = () => {
                                 target={isExternal ? "_blank" : undefined}
                                 rel={isExternal ? "noopener noreferrer" : undefined}
                                 onClick={(e) => handleNoticiaClick(e, 3)}
-                                className="flex w-full md:h-[60vh] overflow-hidden cursor-pointer"
+                                className="flex w-full overflow-hidden cursor-pointer"
                             >
                                 <Noticia
                                     titulo={noticia.titulo}

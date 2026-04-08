@@ -1,5 +1,5 @@
 import HeaderAnimado from "./headerMC";
-import { Noticias, Etiqueta } from "./configuracion";
+import { Noticias, Etiqueta, Banners } from "./configuracion";
 import { useParams, Link } from 'react-router-dom'; // Agregar Link
 import { useEffect, useState } from 'react';
 import Banner from "./banner";
@@ -88,7 +88,7 @@ const noticiaPrincipal = () => {
                 <div className="relative z-10 text-white">
                     {/* Primera noticia con padding consistente */}
                     <Noticia noticia={noticias[0]} isFirst={true} />
-                    <Banner />
+                    {Banners[2] && <Banner banner={Banners[2]} />}
                 </div>
                 <div className="relative z-10 text-white gap-16 mt-16 flex flex-col">
                     {noticias.slice(1).map((n, i) => (

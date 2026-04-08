@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom"; // Importa Link
 
 function MiniNoticia({ titulo, imagenSrc }) {
     return (
-        <section className="max-w-4xl border-b-7 border-r-2 border-[#A30000]/75 h-full rounded-3xl">
+        <section className="">
             <div className="flex flex-col bg-black h-full rounded-3xl">
                 {imagenSrc && <img
                     src={imagenSrc}
@@ -50,10 +50,11 @@ function Body() {
                                 rel={isExternal ? "noopener noreferrer" : undefined}
                                 className={`
                                     block p-2 
-                                    md:h-[50vh] transition duration-300 
+                                    md:h-[60vh] transition duration-300 
                                     hover:shadow-xl hover:scale-[1.01] 
-                                    text-white overflow-hidden
+                                    text-white
                                     cursor-pointer
+                                    max-w-4xl border-b-7 border-r-2 border-[#A30000]/75 h-full rounded-3xl
                                     ${isMobile ? '' : 'opacity-80 hover:opacity-100'}
                                 `}
                             >

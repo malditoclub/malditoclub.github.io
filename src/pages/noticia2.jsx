@@ -5,7 +5,7 @@ function Noticia({
 }) {
     return (
 
-        <div className="flex flex-col h-auto overflow-hidden">
+        <div className="flex flex-col h-auto overflow-hidden md:h-[80vh]">
             
             <h2 className="text-4xl font-deuschtlander mb-2 tracking-wide text-white">{titulo}</h2>
             {/* Contenedor del texto con imagen flotante */}
@@ -13,7 +13,7 @@ function Noticia({
                 {imagenSrc && <img
                     src={imagenSrc}
                     alt="content visual"
-                    className=" w-full h-auto md:float-right md:h-[45vh] md:w-auto md:max-w-1/2 rounded-lg 
+                    className=" w-full h-auto md:float-right md:h-[45vh] md:w-auto md:max-w-3/5 rounded-lg 
                                 transition-all duration-300"
                         // opcional, para limitar altura
                 /> }
