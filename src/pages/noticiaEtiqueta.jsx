@@ -91,17 +91,18 @@ const noticiaEtiqueta = () => {
     }
 
     return (
-        <div className="min-h-screen bg-black"> 
-            <HeaderAnimado />
+        <div className="min-h-screen bg-black "> 
 
+        <HeaderAnimado />
             <div className="relative min-h-screen bg-black">
-                {/* Fondo */}
+                {/* Imagen superior */}
                 <div 
-                    className="absolute inset-0 opacity-50 bg-repeat-y bg-center"
-                    style={{ 
-                        backgroundImage: `url('/assets/RS-Texture-01.jpg')`,
-                        backgroundSize: 'cover'
-                    }}
+                className="absolute inset-0 opacity-50 
+                            bg-repeat-y bg-center"
+                style={{ 
+                    backgroundImage: `url('/assets/RS-Texture-01.jpg')`,
+                    backgroundSize: 'contain'  /* o 'contain' o un valor específico */
+                }}
                 />
 
                 {/* CONTENIDO */}
